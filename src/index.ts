@@ -2,9 +2,10 @@ import {WordCounter} from './classes/WordCounter';
 
 let wordCounter = new WordCounter();
 
-let calculateHighestFrequency = wordCounter.calculateHighestFrequency("dit is slechts een testje, voor een software. + dat - / \het aantal, voor een zin moet tellen");
-let icalculateFrequencyForWord = wordCounter.icalculateFrequencyForWord("dit is slechts een testje, voor een software. + dat - / \het aantal, voor een zin dit moet tellen", "software");
-let calculateMostFrequentNWords = wordCounter.calculateMostFrequentNWords("dit is slechts een software omdat ja software en tellen testje, voor een software. + dat - / \het aantal, voor een zin dit moet tellen", 9);
+let text = `dit is slechts een test tekst om te demonstreren dat deze code snippet werkt om duplicaten te detecteren. Dit is een test.`;
+let calculateHighestFrequency = wordCounter.calculateHighestFrequency(text);
+let icalculateFrequencyForWord = wordCounter.icalculateFrequencyForWord(text, "dit");
+let calculateMostFrequentNWords = wordCounter.calculateMostFrequentNWords(text, 3);
 
 console.log(calculateHighestFrequency);
 console.log(icalculateFrequencyForWord);
